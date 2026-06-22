@@ -1,7 +1,8 @@
 export const business = {
   name: "MANO BLONDE",
   tagline: "Handcrafted balayage boutique",
-  description: "Balayage-focused boutique salon founded by Amanda with a natural, handcrafted color approach.",
+  description:
+    "Mano Blonde grundades av Amanda med fokus på tid, genuin omsorg och naturliga blondresultat — balayage och handgjord färg på Övre Slottsgatan 9 i Uppsala.",
   category: "Hair Salon",
   address: {
     street: "Övre Slottsgatan 9",
@@ -9,19 +10,22 @@ export const business = {
     city: "Uppsala",
     country: "Sverige",
   },
-  phone: "070-000 00 00",
-  phoneLink: "tel:+46700000000",
+  phone: "070-325 19 00",
+  phoneLink: "tel:+46703251900",
   email: "amanda@manoblonde.se" as string | null,
   emailLink: "mailto:amanda@manoblonde.se" as string | null,
-  bookingUrl: "https://www.bokadirekt.se/places/mano-blonde-50657",
+  bookingUrl: "https://www.bokadirekt.se/places/mano-blonde-59799",
   bookingLabel: "Boka på Bokadirekt",
+  websiteUrl: "https://www.manoblonde.se/" as string | null,
+  heroImage: "/images/hero.jpg",
+  aboutImage: "/images/gallery-2.jpg",
   facebookUrl: null as string | null,
   instagramUrl: null as string | null,
   owner: "Amanda",
   rating: 4.9,
   reviewCount: 501,
   foundedYear: 2010,
-  coordinates: { lat: 59.8588, lng: 17.6386 },
+  coordinates: { lat: 59.8579, lng: 17.628 },
   hours: {
     note: "Ring gärna innan besök.",
     regular: [
@@ -42,8 +46,8 @@ export const business = {
   ],
   usps: [
     {
-      title: "Erfarna stylister",
-      description: "Professionell klippning och styling hos MANO BLONDE.",
+      title: "Blondspecialist",
+      description: "Balayage, ombre och blondering med naturligt, handgjort resultat.",
     },
     {
       title: "Centralt läge",
@@ -106,31 +110,52 @@ export const business = {
     },
   ],
   gallery: [
-    { id: 1, label: "Styling", before: "from-[#8B6914] to-[#B8860B]", after: "from-[#F5DEB3]/40 to-[#B8860B]" },
-    { id: 2, label: "Behandling", before: "from-[#B8860B] to-[#8B6914]", after: "from-[#F5DEB3]/30 to-[#8B6914]" },
-    { id: 3, label: "Resultat", before: "from-[#8B6914] to-[#B8860B]/80", after: "from-[#F5DEB3] to-[#B8860B]/50" },
-    { id: 4, label: "Salong", before: "from-[#B8860B]/90 to-[#8B6914]", after: "from-[#F5DEB3]/50 to-[#F5DEB3]" },
-    { id: 5, label: "Detalj", before: "from-[#8B6914] to-[#F5DEB3]/20", after: "from-[#B8860B] to-[#F5DEB3]/35" },
-    { id: 6, label: "Atmosfär", before: "from-[#B8860B] to-[#F5DEB3]/25", after: "from-[#F5DEB3]/60 to-[#8B6914]" },
+    { id: 1, label: "Salongen", image: "/images/gallery-1.jpg" },
+    { id: 2, label: "Balayage", image: "/images/gallery-2.jpg" },
+    { id: 3, label: "Blondering", image: "/images/gallery-3.jpg" },
+    { id: 4, label: "Resultat", image: "/images/gallery-4.jpg" },
+    { id: 5, label: "Styling", image: "/images/gallery-5.jpg" },
+    { id: 6, label: "Atmosfär", image: "/images/gallery-6.jpg" },
   ],
   testimonials: [
     {
-      text: "Fantastisk upplevelse hos MANO BLONDE. Personalen var professionell och resultatet överträffade förväntningarna.",
-      author: "Kundrecension",
-      source: "Offentligt omdöme, parafraserat",
+      text: "Bästa!!❤️",
+      author: "Rebecca S.",
+      source: "Bokadirekt",
+      sourceUrl: "https://www.bokadirekt.se/places/mano-blonde-59799",
       rating: 5,
+      date: "2026-06-18",
     },
     {
-      text: "Rekommenderar MANO BLONDE varmt. Snabb service, trevligt bemötande och bra kvalitet till rimligt pris.",
-      author: "Kundrecension",
-      source: "Offentligt omdöme, parafraserat",
+      text: "Väldigt nöjd! Andra gången jag var till Amanda och kommer absolut fortsätta gå hos henne 🥰 så mysigt i hennes egna, nya salong också!",
+      author: "Hanna V.",
+      source: "Bokadirekt",
+      sourceUrl: "https://www.bokadirekt.se/places/mano-blonde-59799",
       rating: 5,
+      date: "2026-06-17",
+    },
+    {
+      text: "Så fin lokal och trevlig personal. Elton är inkännande och duktig, gjorde som jag ville. Toppen rekommenderas.",
+      author: "Ingela J.",
+      source: "Bokadirekt",
+      sourceUrl: "https://www.bokadirekt.se/places/mano-blonde-59799",
+      rating: 5,
+      date: "2026-06-16",
+    },
+    {
+      text: "Mycket nöjd!",
+      author: "Jakob J.",
+      source: "Bokadirekt",
+      sourceUrl: "https://www.bokadirekt.se/places/mano-blonde-59799",
+      rating: 5,
+      date: "2026-06-15",
     },
   ],
   about: {
     headline: "Om MANO BLONDE",
     paragraphs: [
-      "Balayage-focused boutique salon founded by Amanda with a natural, handcrafted color approach.",
+      "Mano Blonde grundades av Amanda med en enkel, men stark övertygelse: varje kund förtjänar tid, genuin omsorg och ett resultat som känns helt naturligt.",
+      "I salongen ligger fokus på kvalitet, skickligt hantverk och helheten runt dig som kund. Här får du en lugn stund där ditt hår, din stil och din känsla står i centrum — välkommen till Övre Slottsgatan 9.",
     ],
   },
   faq: [
@@ -140,7 +165,7 @@ export const business = {
     },
     {
       question: "Hur bokar jag tid hos MANO BLONDE?",
-      answer: "Boka via Bokadirekt eller ring 070-000 00 00.",
+      answer: "Boka via Bokadirekt eller ring 070-325 19 00.",
     },
     {
       question: "Vad säger kunder om MANO BLONDE?",
