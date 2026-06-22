@@ -1,0 +1,15 @@
+/** Production URL — canonical domain on Vercel. */
+export const PRODUCTION_URL = "https://mano-blonde.vercel.app";
+
+const DEV_URL = "http://localhost:3009";
+
+export function getSiteUrl(): string {
+  if (process.env.VERCEL_ENV === "production") {
+    const productionHost = process.env.VERCEL_PROJECT_PRODUCTION_URL;
+    if (productionHost) return `https://${productionHost}`;
+    return PRODUCTION_URL;
+  }
+  if (process.env.VERCEL_URL) return `https://${process.env.VERCEL_URL}`;
+  if (process.env.NODE_ENV === "production") return PRODUCTION_URL;
+  return DEV_URL;
+}
